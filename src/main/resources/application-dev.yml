@@ -1,0 +1,24 @@
+server:
+    port: 8778
+
+debug: true
+
+spring:
+    cloud:
+        zookeeper:
+            connectString: 127.0.0.1:2181
+            enabled: false
+    sleuth:
+        enabled: false
+
+swagger:
+    basePackage: com.ctgpaas.webfront.controller
+    title: ctg-ctgpaas-webfront RESTful APIs
+    description: ctg-ctgpaas-webfront RESTful API
+    version: 1.0.0-SNAPSHOT
+    openApi:
+        group: OpenApi
+        basePackage: com.ctgpaas.webfront.controller
+        title: actg-ctgpaas-webfront Open APIs
+        description: ctg-ctgpaas-webfront Open API
+        version: 1.0.0-SNAPSHOT
